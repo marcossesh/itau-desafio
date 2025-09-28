@@ -5,12 +5,13 @@ import java.util.Collections;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.atomic.AtomicLong;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
+import org.springframework.stereotype.Repository;
 
 import com.desafio.model.Transacao;
-
+@Repository 
 public class TransacaoRepository {
     private static final Map<Long, Transacao> transacaoMap = new ConcurrentHashMap<>();
     private static final Logger logger = LoggerFactory.getLogger(TransacaoRepository.class);
