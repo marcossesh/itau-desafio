@@ -3,11 +3,11 @@ package com.desafio.model;
 
 public class EstatisticaResponse {
 
-    private long count;
-    private double sum;
-    private double avg;
-    private double min;
-    private double max;
+    private final long count;
+    private final double sum;
+    private final double avg;
+    private final double min;
+    private final double max;
 
     public EstatisticaResponse(long count, double sum, double avg, double min, double max) {
         this.count = count;
